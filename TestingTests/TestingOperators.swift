@@ -45,6 +45,7 @@ class TestingOperators : XCTestCase {
         super.tearDown()
     }
     
+    // 同步测试
     func testAmb() {
         // create observer
         let observer = scheduler.createObserver(String.self)
@@ -73,6 +74,7 @@ class TestingOperators : XCTestCase {
         XCTAssertEqual(results, ["1", "2", "3"])
     }
     
+    // 同步测试
     func testFilter() {
         let observer = scheduler.createObserver(Int.self)
         let observable = scheduler.createHotObservable([
