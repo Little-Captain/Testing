@@ -27,12 +27,12 @@ import RxTest
 @testable import Testing
 
 class TestingViewModel : XCTestCase {
-
-  var viewModel: ViewModel!
-  var scheduler: ConcurrentDispatchQueueScheduler!
-
-  override func setUp() {
-    super.setUp()
-
-  }
+    
+    var viewModel: ViewModel!
+    var scheduler: ConcurrentDispatchQueueScheduler!
+    
+    override func setUp() {
+        super.setUp()
+        
+    }
 }
